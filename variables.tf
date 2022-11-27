@@ -3,7 +3,7 @@ variable "ami_id" {
     description = "ID of the AMI to deploy ec2 instance"
 
     validation {
-      condition = length(var.ami) > 4 && substr(var.ami, 0, 4) == "ami-"
+      condition = length(var.ami_id) > 4 && substr(var.ami_id, 0, 4) == "ami-"
       error_message = "Please enter a valid AMI ID starting with 'ami-'"
     }
   
