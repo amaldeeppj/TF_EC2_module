@@ -23,7 +23,7 @@ variable "tags" {
 
 variable "user_data" {
     type = string
-    default = << EOF
+    default = <<EOF
         #!/bin/bash
         echo "no userdata" > /var/user_data
         EOF
