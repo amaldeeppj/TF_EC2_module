@@ -42,7 +42,7 @@ variable "instance_type" {
   
 }
 
-variable "secudirt_groups" {
+variable "security_groups" {
     type = list(string)
     description = "security groups for EC2 instance"
   
