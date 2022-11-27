@@ -28,3 +28,22 @@ variable "user_data" {
         echo "no userdata" > /var/user_data
         EOF
 }
+
+variable "subnet_id" {
+    type = string
+    description = "subnet ID to launch EC2 instance in"
+
+}
+
+variable "instance_type" {
+    type = string
+    default = "t2.micro"
+    description = "preffered instance type"
+  
+}
+
+variable "secudirt_groups" {
+    type = list(string)
+    description = "security groups for EC2 instance"
+  
+}
